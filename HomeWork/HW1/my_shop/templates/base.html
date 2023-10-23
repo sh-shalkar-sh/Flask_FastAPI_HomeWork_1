@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+<nav>
+<ul>
+    <li> <a href="/clothes">Одежда</a>></li>
+    <li> <a href="/jacket">Куртка</a>></li>
+    <li> <a href="/shoes">Обувь</a>></li>
+</ul>
+</nav>
+<header>
+    {% block content %} {% endblock %}
+    <p> Стоимость: {% block cost %} {% endblock %}</p>
+</header>
+
+
+<footer>
+    <p> Наш адрес: Казахстан, г.Астана, ул.Кенесары </p>
+</footer>
+
+</body>
+</html>
