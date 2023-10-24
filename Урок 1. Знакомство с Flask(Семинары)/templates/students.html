@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблица студентов</title>
+</head>
+<body>
+    <h1>Таблица студентов</h1>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Возраст</th>
+            <th>Средний балл</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student['Имя'] }}</td>
+            <td>{{ student['Фамилия'] }}</td>
+            <td>{{ student['Возраст'] }}</td>
+            <td>{{ student['Средний балл'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
