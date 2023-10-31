@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод данных</title>
+</head>
+<body>
+    <h1>Введите ваше имя и электронную почту</h1>
+    <form method="POST" action="/submit">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
